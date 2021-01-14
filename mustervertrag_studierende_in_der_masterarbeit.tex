@@ -1,0 +1,77 @@
+\documentclass[11pt, helvetica]{article}
+
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{libertine}
+\usepackage{titlesec}
+\usepackage{dashrule}
+
+\pagestyle{empty}
+\setlength\parindent{0pt}
+
+\def\spaceLine{\hdashrule{4cm}{1pt}{1pt}}
+\def\spaceLineBig{\hdashrule{8cm}{1pt}{1pt}}
+\def\spaceLineBigger{\hdashrule{10cm}{1pt}{1pt}}
+\def\spaceLineSmall{\hdashrule{2cm}{1pt}{1pt}}
+
+\titleformat{\section}
+  {\centering\normalfont\Large\bfseries}
+  {\S\thesection}{0pt}{\\}
+
+
+
+\date{2021}
+
+\def\college{Frankfurt University of Applied Sciences}
+\def\departement{Informatik und Ingenieurwissenschaften}
+
+\def\thesisTime{22,5}
+
+  
+
+\begin{document}
+
+
+\title{Mustervertrag für Studierende in der Masterarbeit}
+
+\maketitle
+
+Zwischen \dotfill \\
+
+in \makebox[5.85in][r]{\dotfill}{\small\begin{center}- nachfolgend Unternehmen genannt -\end{center}}
+
+Name \dotfill\\
+geboren am \dotfill\\
+wohnhaft in \dotfill\\
+Matrikel-Nr. \dotfill\\
+
+wird nachstehender Vertrag zur Durchführung der Masterarbeit geschlossen.
+
+\input{general}
+\input{duration}
+\input{student_responsibilities}
+\input{care}
+\input{compensation}
+\input{non_disclosure_agreement}
+\input{termination_of_contract}
+\input{other}
+
+
+\vspace{9cm}
+
+
+\spaceLine , den \spaceLineSmall \\
+
+\vspace{1cm}
+
+
+
+\begin{tabular}{cc}
+\makebox[2.5in]{\hrulefill} & \makebox[2.5in]{\hrulefill} \\
+- die oder der Studierende & - für das Unternehmen -\\[8ex]
+\end{tabular}
+
+
+
+\end{document}
