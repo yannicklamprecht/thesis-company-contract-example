@@ -1,4 +1,4 @@
-\documentclass[11pt, helvetica]{article}
+\documentclass[ngerman, 11pt, helvetica]{article}
 
 \usepackage[a4paper, total={6in, 8in}]{geometry}
 \usepackage[utf8]{inputenc}
@@ -6,6 +6,9 @@
 \usepackage{libertine}
 \usepackage{titlesec}
 \usepackage{dashrule}
+\usepackage{advdate}
+\usepackage{datetime}
+
 
 \pagestyle{empty}
 \setlength\parindent{0pt}
@@ -19,13 +22,17 @@
   {\centering\normalfont\Large\bfseries}
   {\S\thesection}{0pt}{\\}
 
-
-
 \date{2021}
 
 \def\college{Frankfurt University of Applied Sciences}
 \def\departement{Informatik und Ingenieurwissenschaften}
+\def\studyprogram{Allgemeine Informatik}
 
+\newdate{startdate}{20}{01}{2021}
+\newdate{enddate}{28}{06}{2021}
+
+\def\startDate{\displaydate{startdate}}
+\def\endDate{\displaydate{enddate}}
 \def\thesisTime{22,5}
 
   
